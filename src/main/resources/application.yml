@@ -1,0 +1,35 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: start_ordering
+  profiles:
+    active: dev
+  cache:
+    redis:
+      time-to-live: 18000000 # redis 缓存
+  devtools:
+    restart:
+      log-condition-evaluation-delta: false
+
+
+mybatis-plus:
+  configuration:
+    # eg:是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN（下划线命名） 到经典 Java 属性名 aColumn（驼峰命名） 的类似映射。
+    map-underscore-to-camel-case: true
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    # 主键的生成策略
+  global-config:
+    db-config:
+      id-type: ASSIGN_ID
+      #是否控制台 print mybatis-plus 的 LOGO
+    banner: false
+
+
+
+imgPath: D:/Temp/img/
+
+# 阿里云 短信服务
+AccessKeyId: LTAI5tP9ppLTmtfXxzkNRXAf
+
+AccessKeySecret: w6fG9Nx8sCzpb44UcDKuIDQeYS59zZ

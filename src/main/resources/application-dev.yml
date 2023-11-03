@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/db_start?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: ordering
+      password: 123456
+  # redis 配置
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    database: 1
+
+
